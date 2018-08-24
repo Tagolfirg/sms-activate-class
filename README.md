@@ -26,7 +26,65 @@
   </p>
   <hr>
   <h4>5. Функция заказа номера - buyNumber</h4>
-  <p>Вызываем функцию таким спосбом:<b> " $buyNumber = _ACT_SMS::buyNumber($service,$country,$operator='any',$ref='',$forward=0); " </b>
-  
+  <p>Вызываем функцию таким спосбом:<b>"$buyNumber = _ACT_SMS::buyNumber($service,$country,$operator='any',$ref='',$forward=0);" </b>
+    <b>$service </b>- сервис для заказа (указаны ниже)
+
+<b>$forward </b>- Необходимо ли выполнить переадресацию? Принимаемые значения - 0 (не выполнять), 1 - (выполнять). (необязательный параметр, по умолчанию равен 0)
+
+<b>$operator</b> - получить номера определенного оператора (принимаемые значения: mts, tele2, megafon, beeline, any, где any - любой оператор). Необязательный параметр, по умолчанию равен any
+
+<b>$ref</b> - передать реферальный идентификатор. Подробнее
+
+<b>$country </b>- идентификатор страны номера (0 - Россия, 1 - Украина, 2 - Казахстан, 3 - Китай, 4 - Филиппины, 5 - Мьянма, 6 - Индонезия, 7 - Малайзия, 8 - Кения, 9 - Танзания, 10 - Вьетнам, 11 - Кыргызстан, 12 - США, 13 - Израиль, 14 - Гонконг, 15 - Польша), если не указано, то по умолчанию будет выбран номер в соответствии с указанным параметром в левом меню
+
+<b>Список доступных сервисов:</b>
+
+    vk(Вконтакте)
+    ok(Одноклассники)
+    wa(Whatsapp)
+    vi(Viber)
+    tg(Telegram)
+    wb(WeChat)
+    go(Google,youtube,Gmail)
+    av(avito)
+    av(avito
+    +переадресация
+    )
+    fb(facebook)
+    tw(Twitter)
+    ot(Любой другой
+    +переадресация
+    )
+    ub(Uber)
+    qw(Qiwi)
+    gt(Gett)
+    sn(OLX)
+    ig(Instagram)
+    ss(SeoSprint)
+    ym(Юла)
+    ym(Юла
+    +переадресация
+    )
+    ma(Mail.ru)
+    mm(Microsoft)
+    uk(Nike)
+    me(Line messenger)
+    mb(Yahoo)
+    we(ДругВокруг)
+    bd(OKEY)
+    kp(Tencent QQ)
+    dt(WOG)
+    ya(Яндекс)
+    ya(Яндекс
+    +переадресация
+    )
+    mt(Steam)
+    oi(Tinder)
+    fd(Mamba)
+    zz(Drom.ru)
+    kt(KakaoTalk)
+    pm(AOL)
+    tn(LinkedIN)
+    ot(Любой другой)
   </p>
 </body>
