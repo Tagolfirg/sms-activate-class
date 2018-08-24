@@ -30,7 +30,11 @@ class _ACT_SMS {
   public static function getNumbersArr($country_arr=[],$operator='') { $array_number = [];
     $countryarr = ['Россия','Украина','Казахстан','Китай','Филиппины','Мьянма','Индонезия','Малайзия','Кения', 'Танзания','Вьетнам','Кыргызстан', 'США', 'Израиль','Гонконг', 'Польша'];
     foreach ($country_arr as $key => $value) {
-      $array_number[$countryarr[$value]] = self::getNumbers($value,$operator);
+      if ($country_arr == 0 ) {
+        $array_number[$countryarr[$value]] = self::getNumbers($value,$operator);
+      } else {
+        $array_number[$countryarr[$value]] = self::getNumbers($value,'');
+      }
     }
     return $array_number;
   }
