@@ -1,7 +1,7 @@
 /**
  * class for http://sms-activate.ru
  * Написал Alt+255
- * VK: https://vk.com/im?sel=c126
+ * VK: https://vk.com/altplus255
  */
 class _ACT_SMS {
   public static $token;
